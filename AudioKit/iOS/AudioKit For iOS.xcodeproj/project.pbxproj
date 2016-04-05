@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831CC1A01CB3C581006F0557 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 831CC1A21CB3C581006F0557 /* InfoPlist.strings */; };
+		831D594A1CB2964200A91FD8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42F35001C057E03000E937C /* AudioKit.framework */; };
+		831D594B1CB2974500A91FD8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42F35001C057E03000E937C /* AudioKit.framework */; };
+		831D594C1CB2974500A91FD8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C42F35001C057E03000E937C /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		834857AB1CB294BF00C1224B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834857AA1CB294BF00C1224B /* AppDelegate.swift */; };
+		834857AD1CB294BF00C1224B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834857AC1CB294BF00C1224B /* ViewController.swift */; };
+		834857B01CB294BF00C1224B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834857AE1CB294BF00C1224B /* Main.storyboard */; };
+		834857B21CB294BF00C1224B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834857B11CB294BF00C1224B /* Assets.xcassets */; };
+		834857B51CB294BF00C1224B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834857B31CB294BF00C1224B /* LaunchScreen.storyboard */; };
 		C40869AF1C197AF200EF9DED /* biscale.c in Sources */ = {isa = PBXBuildFile; fileRef = C40869AE1C197AF200EF9DED /* biscale.c */; };
 		C40AD69A1C463B2600B638AF /* AKMIDIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AD6951C463B2600B638AF /* AKMIDIEvent.swift */; };
 		C40AD69B1C463B2600B638AF /* AKMIDIInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AD6961C463B2600B638AF /* AKMIDIInstrument.swift */; };
@@ -523,6 +532,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		831D594D1CB2974500A91FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42F34F71C057E03000E937C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
 		C437927E1C0CE2E0001E9160 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C42F34F71C057E03000E937C /* Project object */;
@@ -532,7 +548,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		831D594F1CB2974500A91FD8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				831D594C1CB2974500A91FD8 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		831CC19E1CB3C573006F0557 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		831CC19F1CB3C573006F0557 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		831CC1A11CB3C581006F0557 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		831CC1A31CB3C58C006F0557 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		834857A81CB294BF00C1224B /* camReverb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camReverb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834857AA1CB294BF00C1224B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		834857AC1CB294BF00C1224B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		834857AF1CB294BF00C1224B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834857B11CB294BF00C1224B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834857B41CB294BF00C1224B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		834857B61CB294BF00C1224B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40869AE1C197AF200EF9DED /* biscale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = biscale.c; sourceTree = "<group>"; };
 		C40AD6951C463B2600B638AF /* AKMIDIEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIEvent.swift; sourceTree = "<group>"; };
 		C40AD6961C463B2600B638AF /* AKMIDIInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIInstrument.swift; sourceTree = "<group>"; };
@@ -1056,6 +1097,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		834857A51CB294BF00C1224B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831D594B1CB2974500A91FD8 /* AudioKit.framework in Frameworks */,
+				831D594A1CB2964200A91FD8 /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C42F34FC1C057E03000E937C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1074,6 +1124,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834857A91CB294BF00C1224B /* camReverb */ = {
+			isa = PBXGroup;
+			children = (
+				834857AA1CB294BF00C1224B /* AppDelegate.swift */,
+				834857AC1CB294BF00C1224B /* ViewController.swift */,
+				834857AE1CB294BF00C1224B /* Main.storyboard */,
+				834857B11CB294BF00C1224B /* Assets.xcassets */,
+				834857B31CB294BF00C1224B /* LaunchScreen.storyboard */,
+				834857B61CB294BF00C1224B /* Info.plist */,
+				831CC1A21CB3C581006F0557 /* InfoPlist.strings */,
+			);
+			path = camReverb;
+			sourceTree = "<group>";
+		};
 		C40869661C192C5E00EF9DED /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -1301,6 +1365,7 @@
 				C42F35021C057E03000E937C /* AudioKit */,
 				C42F36C11C05807A000E937C /* AudioKit.playground */,
 				C43792791C0CE2E0001E9160 /* AudioKitTests */,
+				834857A91CB294BF00C1224B /* camReverb */,
 				C42F35011C057E03000E937C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1310,6 +1375,7 @@
 			children = (
 				C42F35001C057E03000E937C /* AudioKit.framework */,
 				C43792781C0CE2E0001E9160 /* AudioKitTests.xctest */,
+				834857A81CB294BF00C1224B /* camReverb.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2703,6 +2769,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		834857A71CB294BF00C1224B /* camReverb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834857B91CB294BF00C1224B /* Build configuration list for PBXNativeTarget "camReverb" */;
+			buildPhases = (
+				834857A41CB294BF00C1224B /* Sources */,
+				834857A51CB294BF00C1224B /* Frameworks */,
+				834857A61CB294BF00C1224B /* Resources */,
+				831D594F1CB2974500A91FD8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				831D594E1CB2974500A91FD8 /* PBXTargetDependency */,
+			);
+			name = camReverb;
+			productName = camReverb;
+			productReference = 834857A81CB294BF00C1224B /* camReverb.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C42F34FF1C057E03000E937C /* AudioKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C42F35081C057E03000E937C /* Build configuration list for PBXNativeTarget "AudioKit" */;
@@ -2745,12 +2830,17 @@
 		C42F34F71C057E03000E937C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = AudioKit;
 				TargetAttributes = {
+					834857A71CB294BF00C1224B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZM36V475HP;
+					};
 					C42F34FF1C057E03000E937C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZM36V475HP;
 					};
 					C43792771C0CE2E0001E9160 = {
 						CreatedOnToolsVersion = 7.2;
@@ -2763,6 +2853,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C42F34F61C057E03000E937C;
 			productRefGroup = C42F35011C057E03000E937C /* Products */;
@@ -2771,11 +2862,23 @@
 			targets = (
 				C42F34FF1C057E03000E937C /* AudioKit */,
 				C43792771C0CE2E0001E9160 /* AudioKitTests */,
+				834857A71CB294BF00C1224B /* camReverb */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		834857A61CB294BF00C1224B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834857B51CB294BF00C1224B /* LaunchScreen.storyboard in Resources */,
+				831CC1A01CB3C581006F0557 /* InfoPlist.strings in Resources */,
+				834857B21CB294BF00C1224B /* Assets.xcassets in Resources */,
+				834857B01CB294BF00C1224B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C42F34FE1C057E03000E937C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2793,6 +2896,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		834857A41CB294BF00C1224B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834857AD1CB294BF00C1224B /* ViewController.swift in Sources */,
+				834857AB1CB294BF00C1224B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C42F34FB1C057E03000E937C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3198,6 +3310,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		831D594E1CB2974500A91FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42F34FF1C057E03000E937C /* AudioKit */;
+			targetProxy = 831D594D1CB2974500A91FD8 /* PBXContainerItemProxy */;
+		};
 		C437927F1C0CE2E0001E9160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C42F34FF1C057E03000E937C /* AudioKit */;
@@ -3205,7 +3322,67 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		831CC1A21CB3C581006F0557 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831CC1A11CB3C581006F0557 /* he */,
+				831CC1A31CB3C58C006F0557 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		834857AE1CB294BF00C1224B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834857AF1CB294BF00C1224B /* Base */,
+				831CC19E1CB3C573006F0557 /* he */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834857B31CB294BF00C1224B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834857B41CB294BF00C1224B /* Base */,
+				831CC19F1CB3C573006F0557 /* he */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		834857B71CB294BF00C1224B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = camReverb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = camReverb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834857B81CB294BF00C1224B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = camReverb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = camReverb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C42F35061C057E03000E937C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3304,6 +3481,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -3331,6 +3509,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -3378,6 +3557,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		834857B91CB294BF00C1224B /* Build configuration list for PBXNativeTarget "camReverb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834857B71CB294BF00C1224B /* Debug */,
+				834857B81CB294BF00C1224B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C42F34FA1C057E03000E937C /* Build configuration list for PBXProject "AudioKit For iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

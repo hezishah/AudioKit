@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  AudioKit For iOS
+
+  Created by Hezi Shahmoon on 5/4/16.
+  Copyright © 2016 AudioKit. All rights reserved.
+*/
+"CFBundleDisplayName" = "Echos";
