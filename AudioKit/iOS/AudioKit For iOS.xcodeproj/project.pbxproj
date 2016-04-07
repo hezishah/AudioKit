@@ -16,6 +16,7 @@
 		834857B01CB294BF00C1224B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834857AE1CB294BF00C1224B /* Main.storyboard */; };
 		834857B21CB294BF00C1224B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834857B11CB294BF00C1224B /* Assets.xcassets */; };
 		834857B51CB294BF00C1224B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834857B31CB294BF00C1224B /* LaunchScreen.storyboard */; };
+		838CB2F21CB6540100277B34 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 838CB2F11CB6540100277B34 /* Shaders.metal */; };
 		C40869AF1C197AF200EF9DED /* biscale.c in Sources */ = {isa = PBXBuildFile; fileRef = C40869AE1C197AF200EF9DED /* biscale.c */; };
 		C40AD69A1C463B2600B638AF /* AKMIDIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AD6951C463B2600B638AF /* AKMIDIEvent.swift */; };
 		C40AD69B1C463B2600B638AF /* AKMIDIInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40AD6961C463B2600B638AF /* AKMIDIInstrument.swift */; };
@@ -574,6 +575,7 @@
 		834857B11CB294BF00C1224B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834857B41CB294BF00C1224B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834857B61CB294BF00C1224B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838CB2F11CB6540100277B34 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		C40869AE1C197AF200EF9DED /* biscale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = biscale.c; sourceTree = "<group>"; };
 		C40AD6951C463B2600B638AF /* AKMIDIEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIEvent.swift; sourceTree = "<group>"; };
 		C40AD6961C463B2600B638AF /* AKMIDIInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIInstrument.swift; sourceTree = "<group>"; };
@@ -1134,6 +1136,7 @@
 				834857B31CB294BF00C1224B /* LaunchScreen.storyboard */,
 				834857B61CB294BF00C1224B /* Info.plist */,
 				831CC1A21CB3C581006F0557 /* InfoPlist.strings */,
+				838CB2F11CB6540100277B34 /* Shaders.metal */,
 			);
 			path = camReverb;
 			sourceTree = "<group>";
@@ -2900,6 +2903,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838CB2F21CB6540100277B34 /* Shaders.metal in Sources */,
 				834857AD1CB294BF00C1224B /* ViewController.swift in Sources */,
 				834857AB1CB294BF00C1224B /* AppDelegate.swift in Sources */,
 			);

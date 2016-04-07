@@ -12,14 +12,26 @@ import AudioKit
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
+    @IBOutlet weak var camView: UIView!
+    
+    var timer = NSTimer()
+    let TIME_INCREMENT = 0.01
+    
     //var sp = AudioInit()
     var ae = AVAudioEngine()
     let session = AVCaptureSession()
     //let recorder = AKMicrophone()
     var reverb =  AKReverb(AKMicrophone())
-    
+    var mean : Double = 0
+
+    func updateCounter() {
+        camView.backgroundColor = UIColor(white: CGFloat(mean/256.0), alpha: 1)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*Start of Audio Capture and Process area*/
         
         AKSettings.audioInputEnabled = true;
         //recorder.start()
@@ -31,6 +43,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         AudioKit.output = reverb
         AudioKit.start()
 
+        /*Start of Video Capture and Process area*/
+        
         session.sessionPreset = AVCaptureSessionPresetLow
         let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         do
@@ -49,8 +63,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
         session.startRunning()
 
-        // instantiate AVAudioEngine()
-
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(TIME_INCREMENT, target:self, selector: #selector(ViewController.updateCounter), userInfo: nil, repeats: true)
 
     }
 
@@ -88,13 +103,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         for index in 0.stride(to: data.length, by: 1) {
             intens += Int(pixels[index])*Int(pixels[index])
         }
-        let mean = sqrt(Double(intens)/Double(data.length))
-        let rev = sqrt(mean-70)/10.0
+        mean = sqrt(Double(intens)/Double(data.length))
+        let rev = sqrt(mean-70)/100.0
         reverb.dryWetMix = rev
-        print(rev)
-        
+        //print(rev)
     }
-
+    
+    @IBAction func onExit(sender: AnyObject) {
+        exit(0)
+    }
 
 }
 
