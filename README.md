@@ -1,4 +1,4 @@
-AudioKit V3
+AudioKit V3 - With camReverb iOS Application
 ===
 
 [![Build Status](https://travis-ci.org/audiokit/AudioKit.svg)](https://travis-ci.org/audiokit/AudioKit)
